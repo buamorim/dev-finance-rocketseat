@@ -57,12 +57,11 @@ a:hover {
 }
 
 button {
-    width: 100%;
+    width: 50%;
     height: 50px;
     border: none;
     color: white;
     background: var(--green);
-    padding: 0;
     border-radius: 0.25rem;
     cursor: pointer;
 }
@@ -80,11 +79,11 @@ button:hover {
     color: var(--red);
     border: 2px var(--red) solid;
     border-radius: 0.25rem;
+    width: 50%;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0.6;
     cursor: pointer;
 }
 
@@ -210,6 +209,7 @@ td.expense {
     justify-content: center;
     opacity: 0;
     visibility: hidden;
+    z-index: 20;
 }
 
 .modal-overlay.active {
@@ -220,6 +220,8 @@ td.expense {
 .modal {
     background: #f0f2f5;
     padding: 2.4rem;
+    position: relative;
+    z-index: 10;
 }
 
 /* Form ======================== */
